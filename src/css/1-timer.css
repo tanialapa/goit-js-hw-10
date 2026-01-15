@@ -1,0 +1,95 @@
+/* база */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.back-link{
+  margin-bottom: 30px;
+}
+.container {
+  width: min(720px, 100% - 32px);
+  margin: 40px auto 0;
+}
+
+/* верхня панель */
+#datetime-picker {
+  width: 260px;
+  height: 38px;
+  padding: 8px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+#datetime-picker:focus {
+  border-color: #7a7a7a;
+}
+
+button[data-start] {
+  height: 38px;
+  padding: 0 18px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  background: #efefef;
+  color: #111;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background: #e6e6e6;
+}
+
+button[data-start]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* розкладка інпут + кнопка */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* таймер */
+.timer {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+}
+
+.value {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+
